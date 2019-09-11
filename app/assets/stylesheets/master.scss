@@ -32,3 +32,10 @@ body {
   font-family: 'kaushan_scriptregular', sans-serif;
   font-size: 36px;
 }
+
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+    }
