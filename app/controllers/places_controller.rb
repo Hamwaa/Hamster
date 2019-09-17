@@ -20,9 +20,10 @@ class PlacesController < ApplicationController
     def show
       @place = Place.find(params[:id])
       @comment = Comment.new
+      @photo = Photo.new
     end
 
-    def edit
+    def edits
       @place = Place.find(params[:id])
 
       if @place.user != current_user
