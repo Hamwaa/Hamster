@@ -20,6 +20,17 @@
         </blockquote>
       </div>
     <% end %>
+    
+    <% if place.photos.present? %>
+      <div class="col-12">
+        <%= image_tag place.photos.last.picture.to_s, class: 'img-fluid' %>
+        <br />
+        - "<%= place.photos.last.caption %>"
+      </div>
+    <% end %>
+
+
+
     </div>
 <% end %>
 
